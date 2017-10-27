@@ -1,3 +1,4 @@
+//calculator in java
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -105,4 +106,4 @@ public Cal()
 		setVisible(true);
 		
 		
-	}
+
