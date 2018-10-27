@@ -94,9 +94,8 @@ public Cal()
 				panel.add(jButtonList.get(k),c);
 				k++;
 				if(k==16) 
-				{
-					break;
-				}
+				break;
+				
 			}
 			
 			this.add(panel);	
