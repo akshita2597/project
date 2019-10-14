@@ -7,18 +7,18 @@ public class Cal extends JFrame implements ActionListener{
 	String s1,s2,s3,s4,s5;
 	JTextField txt = new JTextField();
 	JButton cadd, csub, cmul, cdiv, cequal, one, two, dec, three, four, five, six, seven;
-	JButton eight, nine, czero;
+	JButton eight, nine, czero,cminus;
 	int c, n;
 public Cal()
 	{
-	
+
 		setTitle("Calculator");
 		setSize(203, 230);
 		txt.setEditable(false);
 		setResizable(false);
 		Color blue1 = new Color(204, 255, 255);
 		txt.setBackground(blue1);
-		
+
 		cadd = new JButton("+");
 		cadd.addActionListener(this);
 		csub = new JButton("-");
@@ -72,7 +72,7 @@ public Cal()
 		panel.setLayout(new GridBagLayout());
 		GridBagConstraints c = new GridBagConstraints();
 		c.insets = new Insets(4,4,4,4);
-		
+
 		c.gridx = 0;
 		c.weightx = 1.0;
 		c.gridwidth = 4;
@@ -83,7 +83,7 @@ public Cal()
 		{
 			for(int i=0; i<4; i++)
 			{
-				
+
 				c.gridx = i;
 				c.gridy = j;
 				c.weightx = 0.0;
@@ -93,16 +93,16 @@ public Cal()
 				jButtonList.get(k).setBackground(purple);
 				panel.add(jButtonList.get(k),c);
 				k++;
-				if(k==16) 
+				if(k==16)
 				{
 					break;
 				}
 			}
-			
-			this.add(panel);	
+
+			this.add(panel);
 		}
-		
+
 		setVisible(true);
-		
-		
+
+
 	}
